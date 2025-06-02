@@ -3,6 +3,7 @@ package kr.ac.kopo.actionbarandfragment;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +31,7 @@ public class MyTabFragment extends Fragment {
         baseLayout.setOrientation(LinearLayout.VERTICAL);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT); // width, height
         baseLayout.setLayoutParams(params); // 정의한 레이아웃 설정을 사용함
+        baseLayout.setGravity(Gravity.CENTER);
 
         ImageView img1 = new ImageView(super.getActivity());
         img1.setImageResource(R.drawable.spring);
